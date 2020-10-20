@@ -1,0 +1,987 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct Eui64
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct Eui64
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Hsm.BaseTypes.Eui64">
+  
+  
+  <h1 id="Hsm_BaseTypes_Eui64" data-uid="Hsm.BaseTypes.Eui64" class="text-break">Struct Eui64
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a standardized address format (EUI-64).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Hsm.BaseTypes.html">Hsm.BaseTypes</a></h6>
+  <h6><strong>Assembly</strong>: Hsm.BaseTypes.dll</h6>
+  <h5 id="Hsm_BaseTypes_Eui64_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Eui64 : IEquatable&lt;Eui64&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=49">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64__ctor_" data-uid="Hsm.BaseTypes.Eui64.#ctor*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64__ctor_System_Byte___" data-uid="Hsm.BaseTypes.Eui64.#ctor(System.Byte[])">Eui64(Byte[])</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> struct from a byte array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Eui64(byte[] address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">address</span></td>
+        <td><p>Byte array representing an EUI64 address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">address</code> is not a valid EUI64.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=20">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64__ctor_" data-uid="Hsm.BaseTypes.Eui64.#ctor*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64__ctor_System_Net_NetworkInformation_PhysicalAddress_" data-uid="Hsm.BaseTypes.Eui64.#ctor(System.Net.NetworkInformation.PhysicalAddress)">Eui64(PhysicalAddress)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> struct from a <span class="xref">System.Net.NetworkInformation.PhysicalAddress</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Eui64(PhysicalAddress macAddress)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.NetworkInformation.PhysicalAddress</span></td>
+        <td><span class="parametername">macAddress</span></td>
+        <td><p>48 bit <span class="xref">System.Net.NetworkInformation.PhysicalAddress</span> aka MAC address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">macAddress</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=74">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64__ctor_" data-uid="Hsm.BaseTypes.Eui64.#ctor*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64__ctor_System_String_" data-uid="Hsm.BaseTypes.Eui64.#ctor(System.String)">Eui64(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> struct from a string representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Eui64(string address)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>String representation of the EUI64 address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">address</code> is null or length of address is not equal to 16.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=345">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_Equals_" data-uid="Hsm.BaseTypes.Eui64.Equals*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_Equals_Hsm_BaseTypes_Eui64_" data-uid="Hsm.BaseTypes.Eui64.Equals(Hsm.BaseTypes.Eui64)">Equals(Eui64)</h4>
+  <div class="markdown level1 summary"><p>Checks if <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> other is equal to this <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Eui64 other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p><a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> other is equal to this <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a>. Returns false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=355">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_Equals_" data-uid="Hsm.BaseTypes.Eui64.Equals*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_Equals_System_Object_" data-uid="Hsm.BaseTypes.Eui64.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Checks if <span class="xref">System.Object</span> other is equal to this <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p><span class="xref">System.Object</span>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> other is equal to this <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a>. Returns false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=249">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_FromLong_" data-uid="Hsm.BaseTypes.Eui64.FromLong*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_FromLong_System_Int64_" data-uid="Hsm.BaseTypes.Eui64.FromLong(System.Int64)">FromLong(Int64)</h4>
+  <div class="markdown level1 summary"><p>Creates an <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> from a long.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Eui64 FromLong(long longRepresentation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">longRepresentation</span></td>
+        <td><p>An <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> represented as long value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a></td>
+        <td><p>The converted <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=322">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_Get48BitAddress_" data-uid="Hsm.BaseTypes.Eui64.Get48BitAddress*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_Get48BitAddress" data-uid="Hsm.BaseTypes.Eui64.Get48BitAddress">Get48BitAddress()</h4>
+  <div class="markdown level1 summary"><p>Returns 48 bit <span class="xref">System.Net.NetworkInformation.PhysicalAddress</span> of <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> if the 64 bit address is 48 bit compatible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhysicalAddress Get48BitAddress()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Net.NetworkInformation.PhysicalAddress</span></td>
+        <td><p>48 bit <span class="xref">System.Net.NetworkInformation.PhysicalAddress</span> of <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidOperationException</span></td>
+        <td><p>EUI64 is not 48 bit compatible.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=274">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_GetBytes_" data-uid="Hsm.BaseTypes.Eui64.GetBytes*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_GetBytes" data-uid="Hsm.BaseTypes.Eui64.GetBytes">GetBytes()</h4>
+  <div class="markdown level1 summary"><p>Gets byte[] representing the Address.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[] GetBytes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>byte[] representing the Address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=376">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_GetHashCode_" data-uid="Hsm.BaseTypes.Eui64.GetHashCode*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_GetHashCode" data-uid="Hsm.BaseTypes.Eui64.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Gets the HashCode of a <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The HashCode of a <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=312">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_Is48BitCompatible_" data-uid="Hsm.BaseTypes.Eui64.Is48BitCompatible*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_Is48BitCompatible" data-uid="Hsm.BaseTypes.Eui64.Is48BitCompatible">Is48BitCompatible()</h4>
+  <div class="markdown level1 summary"><p>Checks if 64 bit eui64StringRepresentation of <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> is 48 bit compatible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Is48BitCompatible()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if 64 bit eui64StringRepresentation of <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> is 48 bit compatible. Returns false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=207">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_IsValidFormat_" data-uid="Hsm.BaseTypes.Eui64.IsValidFormat*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_IsValidFormat_System_String_Hsm_BaseTypes_Eui64Presentation_" data-uid="Hsm.BaseTypes.Eui64.IsValidFormat(System.String,Hsm.BaseTypes.Eui64Presentation)">IsValidFormat(String, Eui64Presentation)</h4>
+  <div class="markdown level1 summary"><p>Checks whether a address is valid given the defined presentation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidFormat(string address, Eui64Presentation presentation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>Address to be checked.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Eui64Presentation.html">Eui64Presentation</a></td>
+        <td><span class="parametername">presentation</span></td>
+        <td><p>Format of address.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if address is valid. Returns false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">address</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=128">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_ParseExact_" data-uid="Hsm.BaseTypes.Eui64.ParseExact*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_ParseExact_System_String_Hsm_BaseTypes_Eui64Presentation_" data-uid="Hsm.BaseTypes.Eui64.ParseExact(System.String,Hsm.BaseTypes.Eui64Presentation)">ParseExact(String, Eui64Presentation)</h4>
+  <div class="markdown level1 summary"><p>Converts the specified string representation of an eui64StringRepresentation to its <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> equivalent. The presentation of the string representation must match a specified presentation exactly or an exception is thrown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Eui64 ParseExact(string address, Eui64Presentation presentation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>Address as string with 16 characters.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Eui64Presentation.html">Eui64Presentation</a></td>
+        <td><span class="parametername">presentation</span></td>
+        <td><p>Specified <a class="xref" href="Hsm.BaseTypes.Eui64Presentation.html">Eui64Presentation</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a></td>
+        <td><p><a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> value of eui64StringRepresentation with specified presentation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.FormatException</span></td>
+        <td><p>Length of <code data-dev-comment-type="paramref" class="paramref">address</code> does not match required length of presentation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=262">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_ToLong_" data-uid="Hsm.BaseTypes.Eui64.ToLong*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_ToLong" data-uid="Hsm.BaseTypes.Eui64.ToLong">ToLong()</h4>
+  <div class="markdown level1 summary"><p>Converts this <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> to a long value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ToLong()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>The converted long value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=287">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_ToString_" data-uid="Hsm.BaseTypes.Eui64.ToString*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_ToString" data-uid="Hsm.BaseTypes.Eui64.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.ToString()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=298">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_ToString_" data-uid="Hsm.BaseTypes.Eui64.ToString*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_ToString_Hsm_BaseTypes_Eui64Presentation_" data-uid="Hsm.BaseTypes.Eui64.ToString(Hsm.BaseTypes.Eui64Presentation)">ToString(Eui64Presentation)</h4>
+  <div class="markdown level1 summary"><p>Returns <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> in string representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(Eui64Presentation presentation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Eui64Presentation.html">Eui64Presentation</a></td>
+        <td><span class="parametername">presentation</span></td>
+        <td><p><a class="xref" href="Hsm.BaseTypes.Eui64Presentation.html">Eui64Presentation</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>String representation of <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> in <a class="xref" href="Hsm.BaseTypes.Eui64Presentation.html">Eui64Presentation</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.FormatException</span></td>
+        <td><p>Length of <span class="xref">Hsm.BaseTypes.Eui64.Address</span> does not match required length of presentation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=171">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_TryParse_" data-uid="Hsm.BaseTypes.Eui64.TryParse*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_TryParse_System_String_Hsm_BaseTypes_Eui64__" data-uid="Hsm.BaseTypes.Eui64.TryParse(System.String,Hsm.BaseTypes.Eui64@)">TryParse(String, out Eui64)</h4>
+  <div class="markdown level1 summary"><p>Converts the string representation of an <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> to its <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> equivalent. A return value indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParse(string address, out Eui64 eui64)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>A string containing a address to convert.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a></td>
+        <td><span class="parametername">eui64</span></td>
+        <td><p>When this method returns, contains the <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> equivalent of the address contained in <code data-dev-comment-type="paramref" class="paramref">address</code>,
+if the conversion succeeded, or an <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> with all zeros as its address if the conversion failed.
+The conversion fails if the <code data-dev-comment-type="paramref" class="paramref">address</code> parameter is null or Empty,
+or is not of the correct format. This parameter is passed uninitialized; any value originally supplied in <code data-dev-comment-type="paramref" class="paramref">eui64</code> will be overwritten.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if <code data-dev-comment-type="paramref" class="paramref">address</code> was converted successfully; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=105">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_op_Equality_" data-uid="Hsm.BaseTypes.Eui64.op_Equality*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_op_Equality_Hsm_BaseTypes_Eui64_Hsm_BaseTypes_Eui64_" data-uid="Hsm.BaseTypes.Eui64.op_Equality(Hsm.BaseTypes.Eui64,Hsm.BaseTypes.Eui64)">Equality(Eui64, Eui64)</h4>
+  <div class="markdown level1 summary"><p>Operator to check if left and right <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Eui64 left, Eui64 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p><a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> on left side.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p><a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> on right side.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if left and right <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=116">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Eui64_op_Inequality_" data-uid="Hsm.BaseTypes.Eui64.op_Inequality*"></a>
+  <h4 id="Hsm_BaseTypes_Eui64_op_Inequality_Hsm_BaseTypes_Eui64_Hsm_BaseTypes_Eui64_" data-uid="Hsm.BaseTypes.Eui64.op_Inequality(Hsm.BaseTypes.Eui64,Hsm.BaseTypes.Eui64)">Inequality(Eui64, Eui64)</h4>
+  <div class="markdown level1 summary"><p>Operator to check if left and right <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Eui64 left, Eui64 right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p><a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> on left side.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p><a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> on right side.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if left and right <a class="xref" href="Hsm.BaseTypes.Eui64.html">Eui64</a> are equal.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Eui64Definition/Eui64.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="https://docs.hagleitner.com/">Back to docs.hagleitner.com</a>
+            </span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

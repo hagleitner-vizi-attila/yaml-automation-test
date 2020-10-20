@@ -1,0 +1,2062 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct Base36Cipher
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct Base36Cipher
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Hsm.BaseTypes.Base36Cipher">
+  
+  
+  <h1 id="Hsm_BaseTypes_Base36Cipher" data-uid="Hsm.BaseTypes.Base36Cipher" class="text-break">Struct Base36Cipher
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a number with a base defined by 0-9 and letters a-z (based on ASCII characters).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>&gt;</div>
+    <div><span class="xref">System.IComparable</span>&lt;<a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Hsm.BaseTypes.html">Hsm.BaseTypes</a></h6>
+  <h6><strong>Assembly</strong>: Hsm.BaseTypes.dll</h6>
+  <h5 id="Hsm_BaseTypes_Base36Cipher_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct Base36Cipher : IEquatable&lt;Base36Cipher&gt;, IComparable&lt;Base36Cipher&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=30">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher__ctor_" data-uid="Hsm.BaseTypes.Base36Cipher.#ctor*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher__ctor_System_String_" data-uid="Hsm.BaseTypes.Base36Cipher.#ctor(System.String)">Base36Cipher(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> struct based on a base36 string representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Base36Cipher(string base36representation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">base36representation</span></td>
+        <td><p>The string representation of the cipher.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=39">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher__ctor_" data-uid="Hsm.BaseTypes.Base36Cipher.#ctor*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher__ctor_System_UInt64_" data-uid="Hsm.BaseTypes.Base36Cipher.#ctor(System.UInt64)">Base36Cipher(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> struct based on a decimal value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Base36Cipher(ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The decimal value of the cipher.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=57">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_Length_" data-uid="Hsm.BaseTypes.Base36Cipher.Length*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_Length" data-uid="Hsm.BaseTypes.Base36Cipher.Length">Length</h4>
+  <div class="markdown level1 summary"><p>Gets the length of the <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=52">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_MaxValue_" data-uid="Hsm.BaseTypes.Base36Cipher.MaxValue*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_MaxValue" data-uid="Hsm.BaseTypes.Base36Cipher.MaxValue">MaxValue</h4>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> with its maximum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Base36Cipher MaxValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=47">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_MinValue_" data-uid="Hsm.BaseTypes.Base36Cipher.MinValue*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_MinValue" data-uid="Hsm.BaseTypes.Base36Cipher.MinValue">MinValue</h4>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> with its minimum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Base36Cipher MinValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=211">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_Add_" data-uid="Hsm.BaseTypes.Base36Cipher.Add*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_Add_Hsm_BaseTypes_Base36Cipher_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.Add(Hsm.BaseTypes.Base36Cipher,Hsm.BaseTypes.Base36Cipher)">Add(Base36Cipher, Base36Cipher)</h4>
+  <div class="markdown level1 summary"><p>Addition of two <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Base36Cipher Add(Base36Cipher base36Cipher1, Base36Cipher base36Cipher2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher1</span></td>
+        <td><p>First summand.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher2</span></td>
+        <td><p>Second summand.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><p>The result of the addition as a new <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.OverflowException</span></td>
+        <td><p>The result of this operation is greater than the maximum value of a <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=356">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_CompareTo_" data-uid="Hsm.BaseTypes.Base36Cipher.CompareTo*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_CompareTo_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.CompareTo(Hsm.BaseTypes.Base36Cipher)">CompareTo(Base36Cipher)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(Base36Cipher other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=247">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_Divide_" data-uid="Hsm.BaseTypes.Base36Cipher.Divide*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_Divide_Hsm_BaseTypes_Base36Cipher_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.Divide(Hsm.BaseTypes.Base36Cipher,Hsm.BaseTypes.Base36Cipher)">Divide(Base36Cipher, Base36Cipher)</h4>
+  <div class="markdown level1 summary"><p>Division of the first <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> by the second <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Base36Cipher Divide(Base36Cipher base36Cipher1, Base36Cipher base36Cipher2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher1</span></td>
+        <td><p>Dividend.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher2</span></td>
+        <td><p>Divisor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><p>The result of the division as a new <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DivideByZeroException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">base36Cipher2</code> has a decimal value of 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=372">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_Equals_" data-uid="Hsm.BaseTypes.Base36Cipher.Equals*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_Equals_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.Equals(Hsm.BaseTypes.Base36Cipher)">Equals(Base36Cipher)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Base36Cipher other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=378">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_Equals_" data-uid="Hsm.BaseTypes.Base36Cipher.Equals*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_Equals_System_Object_" data-uid="Hsm.BaseTypes.Base36Cipher.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=296">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_FromInt32_" data-uid="Hsm.BaseTypes.Base36Cipher.FromInt32*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_FromInt32_System_Int32_" data-uid="Hsm.BaseTypes.Base36Cipher.FromInt32(System.Int32)">FromInt32(Int32)</h4>
+  <div class="markdown level1 summary"><p>Casts an int value to a Base36Cipher.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FromInt32(int decimalValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">decimalValue</span></td>
+        <td><p>The int value to be cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>A <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> representing the int value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidCastException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">decimalValue</code> is negative.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=288">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_FromInt64_" data-uid="Hsm.BaseTypes.Base36Cipher.FromInt64*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_FromInt64_System_Int64_" data-uid="Hsm.BaseTypes.Base36Cipher.FromInt64(System.Int64)">FromInt64(Int64)</h4>
+  <div class="markdown level1 summary"><p>Casts a long value to a Base36Cipher.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long FromInt64(long decimalValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">decimalValue</span></td>
+        <td><p>The long value to be cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>A <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> representing the long value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidCastException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">decimalValue</code> is negative.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=332">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_FromString_" data-uid="Hsm.BaseTypes.Base36Cipher.FromString*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_FromString_System_String_" data-uid="Hsm.BaseTypes.Base36Cipher.FromString(System.String)">FromString(String)</h4>
+  <div class="markdown level1 summary"><p>Converts the string representation of a <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> to its <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> equivalent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Base36Cipher FromString(string base36Representation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">base36Representation</span></td>
+        <td><p>String to be converted into a <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><p>Base36Cipher created from <code data-dev-comment-type="paramref" class="paramref">base36Representation</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=280">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_FromUInt64_" data-uid="Hsm.BaseTypes.Base36Cipher.FromUInt64*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_FromUInt64_System_UInt64_" data-uid="Hsm.BaseTypes.Base36Cipher.FromUInt64(System.UInt64)">FromUInt64(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Casts a ulong value to a Base36Cipher.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong FromUInt64(ulong decimalValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">decimalValue</span></td>
+        <td><p>The ulong value to be cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><p>A <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> representing the ulong value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=384">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_GetHashCode_" data-uid="Hsm.BaseTypes.Base36Cipher.GetHashCode*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_GetHashCode" data-uid="Hsm.BaseTypes.Base36Cipher.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=235">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_Multiply_" data-uid="Hsm.BaseTypes.Base36Cipher.Multiply*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_Multiply_Hsm_BaseTypes_Base36Cipher_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.Multiply(Hsm.BaseTypes.Base36Cipher,Hsm.BaseTypes.Base36Cipher)">Multiply(Base36Cipher, Base36Cipher)</h4>
+  <div class="markdown level1 summary"><p>The multiplication of two <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Base36Cipher Multiply(Base36Cipher base36Cipher1, Base36Cipher base36Cipher2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher1</span></td>
+        <td><p>First factor.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher2</span></td>
+        <td><p>Second factor.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><p>The result of the multiplication as a new <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.OverflowException</span></td>
+        <td><p>The result of this operation is greater than the maximum value of a <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=223">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_Subtract_" data-uid="Hsm.BaseTypes.Base36Cipher.Subtract*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_Subtract_Hsm_BaseTypes_Base36Cipher_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.Subtract(Hsm.BaseTypes.Base36Cipher,Hsm.BaseTypes.Base36Cipher)">Subtract(Base36Cipher, Base36Cipher)</h4>
+  <div class="markdown level1 summary"><p>Subtraction of the second <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> from the first <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Base36Cipher Subtract(Base36Cipher base36Cipher1, Base36Cipher base36Cipher2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher1</span></td>
+        <td><p>Minuend.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher2</span></td>
+        <td><p>Subtrahend.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><p>The result of the subtraction as a new <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.OverflowException</span></td>
+        <td><p>The result of this operation is negative. Base36Cipher must be positive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=273">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_ToInt32_" data-uid="Hsm.BaseTypes.Base36Cipher.ToInt32*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_ToInt32_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.ToInt32(Hsm.BaseTypes.Base36Cipher)">ToInt32(Base36Cipher)</h4>
+  <div class="markdown level1 summary"><p>Casts a Base36Cipher to an int value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ToInt32(Base36Cipher base36Cipher)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher</span></td>
+        <td><p>The Base36Cipher to be cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>A int value representing the Base36Cipher.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidCastException</span></td>
+        <td><p>Decimal value of <code data-dev-comment-type="paramref" class="paramref">base36Cipher</code> exceeds range of int.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=265">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_ToInt64_" data-uid="Hsm.BaseTypes.Base36Cipher.ToInt64*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_ToInt64_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.ToInt64(Hsm.BaseTypes.Base36Cipher)">ToInt64(Base36Cipher)</h4>
+  <div class="markdown level1 summary"><p>Casts a Base36Cipher to a long value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static long ToInt64(Base36Cipher base36Cipher)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher</span></td>
+        <td><p>The Base36Cipher to be cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>A long value representing the Base36Cipher.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidCastException</span></td>
+        <td><p>Decimal value of <code data-dev-comment-type="paramref" class="paramref">base36Cipher</code> exceeds range of long.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=338">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_ToString_" data-uid="Hsm.BaseTypes.Base36Cipher.ToString*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_ToString" data-uid="Hsm.BaseTypes.Base36Cipher.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.ToString()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=257">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_ToUInt64_" data-uid="Hsm.BaseTypes.Base36Cipher.ToUInt64*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_ToUInt64_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.ToUInt64(Hsm.BaseTypes.Base36Cipher)">ToUInt64(Base36Cipher)</h4>
+  <div class="markdown level1 summary"><p>Casts a Base36Cipher to a ulong value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ulong ToUInt64(Base36Cipher base36Cipher)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher</span></td>
+        <td><p>The Base36Cipher to be cast.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><p>A ulong value representing the Base36Cipher.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=307">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_TryParse_" data-uid="Hsm.BaseTypes.Base36Cipher.TryParse*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_TryParse_System_String_Hsm_BaseTypes_Base36Cipher__" data-uid="Hsm.BaseTypes.Base36Cipher.TryParse(System.String,Hsm.BaseTypes.Base36Cipher@)">TryParse(String, out Base36Cipher)</h4>
+  <div class="markdown level1 summary"><p>Tries to parse a string into a <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> by validating the type requirements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParse(string base36CipherString, out Base36Cipher base36Cipher)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">base36CipherString</span></td>
+        <td><p>The string to be parsed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher</span></td>
+        <td><p>When the method returns, contains the <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> equivalent to the input string, if the conversion succeeded,
+or MinValue, if the conversion failed. The conversion fails if the input parameter is null or does not contain a valid string representation of a <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.
+This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the input parameter is successfully converted; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">base36CipherString</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=164">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_Addition_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Addition*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_Addition_Hsm_BaseTypes_Base36Cipher_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Addition(Hsm.BaseTypes.Base36Cipher,Hsm.BaseTypes.Base36Cipher)">Addition(Base36Cipher, Base36Cipher)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Base36Cipher operator +(Base36Cipher base36Cipher1, Base36Cipher base36Cipher2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=194">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_Division_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Division*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_Division_Hsm_BaseTypes_Base36Cipher_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Division(Hsm.BaseTypes.Base36Cipher,Hsm.BaseTypes.Base36Cipher)">Division(Base36Cipher, Base36Cipher)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Base36Cipher operator /(Base36Cipher base36Cipher1, Base36Cipher base36Cipher2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=134">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_Equality_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Equality*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_Equality_Hsm_BaseTypes_Base36Cipher_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Equality(Hsm.BaseTypes.Base36Cipher,Hsm.BaseTypes.Base36Cipher)">Equality(Base36Cipher, Base36Cipher)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(Base36Cipher base36Cipher1, Base36Cipher base36Cipher2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=88">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_Explicit_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Explicit*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_Explicit_Hsm_BaseTypes_Base36Cipher__System_Int32" data-uid="Hsm.BaseTypes.Base36Cipher.op_Explicit(Hsm.BaseTypes.Base36Cipher)~System.Int32">Explicit(Base36Cipher to Int32)</h4>
+  <div class="markdown level1 summary"><p>Casts a <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> to int.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator int (Base36Cipher base36Cipher)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher</span></td>
+        <td><p>A <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidCastException</span></td>
+        <td><p>Overflow was caused.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=73">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_Explicit_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Explicit*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_Explicit_Hsm_BaseTypes_Base36Cipher__System_Int64" data-uid="Hsm.BaseTypes.Base36Cipher.op_Explicit(Hsm.BaseTypes.Base36Cipher)~System.Int64">Explicit(Base36Cipher to Int64)</h4>
+  <div class="markdown level1 summary"><p>Casts a <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> to long.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator long (Base36Cipher base36Cipher)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher</span></td>
+        <td><p>A <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidCastException</span></td>
+        <td><p>Overflow was caused.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=124">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_Explicit_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Explicit*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_Explicit_System_Int32__Hsm_BaseTypes_Base36Cipher" data-uid="Hsm.BaseTypes.Base36Cipher.op_Explicit(System.Int32)~Hsm.BaseTypes.Base36Cipher">Explicit(Int32 to Base36Cipher)</h4>
+  <div class="markdown level1 summary"><p>Casts a int value to a <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator Base36Cipher(int decimalValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">decimalValue</span></td>
+        <td><p>A int value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidCastException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">decimalValue</code> is negative.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=109">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_Explicit_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Explicit*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_Explicit_System_Int64__Hsm_BaseTypes_Base36Cipher" data-uid="Hsm.BaseTypes.Base36Cipher.op_Explicit(System.Int64)~Hsm.BaseTypes.Base36Cipher">Explicit(Int64 to Base36Cipher)</h4>
+  <div class="markdown level1 summary"><p>Casts a long value to a <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator Base36Cipher(long decimalValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">decimalValue</span></td>
+        <td><p>A long value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.InvalidCastException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">decimalValue</code> is negative.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=102">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_Explicit_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Explicit*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_Explicit_System_UInt64__Hsm_BaseTypes_Base36Cipher" data-uid="Hsm.BaseTypes.Base36Cipher.op_Explicit(System.UInt64)~Hsm.BaseTypes.Base36Cipher">Explicit(UInt64 to Base36Cipher)</h4>
+  <div class="markdown level1 summary"><p>Casts a ulong value to a <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator Base36Cipher(ulong decimalValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">decimalValue</span></td>
+        <td><p>A ulong value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=154">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_GreaterThan_" data-uid="Hsm.BaseTypes.Base36Cipher.op_GreaterThan*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_GreaterThan_Hsm_BaseTypes_Base36Cipher_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.op_GreaterThan(Hsm.BaseTypes.Base36Cipher,Hsm.BaseTypes.Base36Cipher)">GreaterThan(Base36Cipher, Base36Cipher)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator&gt;(Base36Cipher base36Cipher1, Base36Cipher base36Cipher2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=144">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_GreaterThanOrEqual_" data-uid="Hsm.BaseTypes.Base36Cipher.op_GreaterThanOrEqual*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_GreaterThanOrEqual_Hsm_BaseTypes_Base36Cipher_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.op_GreaterThanOrEqual(Hsm.BaseTypes.Base36Cipher,Hsm.BaseTypes.Base36Cipher)">GreaterThanOrEqual(Base36Cipher, Base36Cipher)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(Base36Cipher base36Cipher1, Base36Cipher base36Cipher2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=63">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_Implicit_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Implicit*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_Implicit_Hsm_BaseTypes_Base36Cipher__System_UInt64" data-uid="Hsm.BaseTypes.Base36Cipher.op_Implicit(Hsm.BaseTypes.Base36Cipher)~System.UInt64">Implicit(Base36Cipher to UInt64)</h4>
+  <div class="markdown level1 summary"><p>Casts a <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a> to ulong.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator ulong (Base36Cipher base36Cipher)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher</span></td>
+        <td><p>A <a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=139">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_Inequality_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Inequality*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_Inequality_Hsm_BaseTypes_Base36Cipher_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Inequality(Hsm.BaseTypes.Base36Cipher,Hsm.BaseTypes.Base36Cipher)">Inequality(Base36Cipher, Base36Cipher)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(Base36Cipher base36Cipher1, Base36Cipher base36Cipher2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=159">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_LessThan_" data-uid="Hsm.BaseTypes.Base36Cipher.op_LessThan*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_LessThan_Hsm_BaseTypes_Base36Cipher_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.op_LessThan(Hsm.BaseTypes.Base36Cipher,Hsm.BaseTypes.Base36Cipher)">LessThan(Base36Cipher, Base36Cipher)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(Base36Cipher base36Cipher1, Base36Cipher base36Cipher2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=149">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_LessThanOrEqual_" data-uid="Hsm.BaseTypes.Base36Cipher.op_LessThanOrEqual*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_LessThanOrEqual_Hsm_BaseTypes_Base36Cipher_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.op_LessThanOrEqual(Hsm.BaseTypes.Base36Cipher,Hsm.BaseTypes.Base36Cipher)">LessThanOrEqual(Base36Cipher, Base36Cipher)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(Base36Cipher base36Cipher1, Base36Cipher base36Cipher2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=184">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_Multiply_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Multiply*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_Multiply_Hsm_BaseTypes_Base36Cipher_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Multiply(Hsm.BaseTypes.Base36Cipher,Hsm.BaseTypes.Base36Cipher)">Multiply(Base36Cipher, Base36Cipher)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Base36Cipher operator *(Base36Cipher base36Cipher1, Base36Cipher base36Cipher2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=174">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Base36Cipher_op_Subtraction_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Subtraction*"></a>
+  <h4 id="Hsm_BaseTypes_Base36Cipher_op_Subtraction_Hsm_BaseTypes_Base36Cipher_Hsm_BaseTypes_Base36Cipher_" data-uid="Hsm.BaseTypes.Base36Cipher.op_Subtraction(Hsm.BaseTypes.Base36Cipher,Hsm.BaseTypes.Base36Cipher)">Subtraction(Base36Cipher, Base36Cipher)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Base36Cipher operator -(Base36Cipher base36Cipher1, Base36Cipher base36Cipher2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td><span class="parametername">base36Cipher2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Base36Cipher.html">Base36Cipher</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IComparable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/Base36Cipher.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="https://docs.hagleitner.com/">Back to docs.hagleitner.com</a>
+            </span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

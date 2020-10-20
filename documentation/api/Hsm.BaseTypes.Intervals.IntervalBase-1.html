@@ -1,0 +1,973 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class IntervalBase&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class IntervalBase&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1">
+  
+  
+  <h1 id="Hsm_BaseTypes_Intervals_IntervalBase_1" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1" class="text-break">Class IntervalBase&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for intervals based on &quot;real&quot; values, and totally ordered sets.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">IntervalBase&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="Hsm.BaseTypes.Intervals.DateTimeOffsetInterval.html">DateTimeOffsetInterval</a></div>
+      <div class="level2"><a class="xref" href="Hsm.BaseTypes.Intervals.DoubleInterval.html">DoubleInterval</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Hsm.BaseTypes.Intervals.html">Hsm.BaseTypes.Intervals</a></h6>
+  <h6><strong>Assembly</strong>: Hsm.BaseTypes.dll</h6>
+  <h5 id="Hsm_BaseTypes_Intervals_IntervalBase_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class IntervalBase&lt;T&gt;
+    where T : IComparable&lt;T&gt;, IEquatable&lt;T&gt;, IFormattable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The basic value type on which the interval is defined.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=23">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1__ctor_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.#ctor*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1__ctor__0__0_System_Boolean_System_Boolean_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.#ctor(`0,`0,System.Boolean,System.Boolean)">IntervalBase(T, T, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Hsm.BaseTypes.Intervals.IntervalBase-1.html">IntervalBase&lt;T&gt;</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntervalBase(T leftBoundary, T rightBoundary, bool leftClosed, bool rightClosed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">leftBoundary</span></td>
+        <td><p>The left boundary of the interval.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">rightBoundary</span></td>
+        <td><p>The right boundary of the interval.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">leftClosed</span></td>
+        <td><p>A value indicating whether the interval is left closed.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">rightClosed</span></td>
+        <td><p>A value indicating whether the interval is right closed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=75">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsDegenerated_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsDegenerated*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsDegenerated" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsDegenerated">IsDegenerated</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the interval is degenerated, i.e. has only one element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDegenerated { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=69">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsEmpty_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsEmpty*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsEmpty" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsEmpty">IsEmpty</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the interval is empty, i.e. has no elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEmpty { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=54">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsLeftBounded_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsLeftBounded*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsLeftBounded" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsLeftBounded">IsLeftBounded</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the interval is left bounded i.e. if there exists an element that is smaller than <a class="xref" href="Hsm.BaseTypes.Intervals.IntervalBase-1.html#Hsm_BaseTypes_Intervals_IntervalBase_1_LeftBoundary">LeftBoundary</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsLeftBounded { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=64">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsProper_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsProper*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsProper" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsProper">IsProper</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the interval is proper, i.e. has an infinite number of elements (well in theory, in computers it will always be finite).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsProper { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=59">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsRightBounded_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsRightBounded*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsRightBounded" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsRightBounded">IsRightBounded</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the interval is right bounded i.e. if there exists an element that is greater than <a class="xref" href="Hsm.BaseTypes.Intervals.IntervalBase-1.html#Hsm_BaseTypes_Intervals_IntervalBase_1_RightBoundary">RightBoundary</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool IsRightBounded { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=34">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_LeftBoundary_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.LeftBoundary*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_LeftBoundary" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.LeftBoundary">LeftBoundary</h4>
+  <div class="markdown level1 summary"><p>Gets the left boundary of the interval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T LeftBoundary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=44">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_LeftClosed_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.LeftClosed*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_LeftClosed" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.LeftClosed">LeftClosed</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the interval is left-closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool LeftClosed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=39">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_RightBoundary_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.RightBoundary*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_RightBoundary" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.RightBoundary">RightBoundary</h4>
+  <div class="markdown level1 summary"><p>Gets the right boundary of the interval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T RightBoundary { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=49">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_RightClosed_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.RightClosed*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_RightClosed" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.RightClosed">RightClosed</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the interval is right-closed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RightClosed { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=95">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_Contains_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.Contains*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_Contains_Hsm_BaseTypes_Intervals_IntervalBase__0__" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.Contains(Hsm.BaseTypes.Intervals.IntervalBase{`0})">Contains(IntervalBase&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Checks if the <code data-dev-comment-type="paramref" class="paramref">testInterval</code> is contained in this interval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(IntervalBase&lt;T&gt; testInterval)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Intervals.IntervalBase-1.html">IntervalBase</a>&lt;T&gt;</td>
+        <td><span class="parametername">testInterval</span></td>
+        <td><p>The interval that is tested if it is contained within this interval.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the <code data-dev-comment-type="paramref" class="paramref">testInterval</code> is contained within this interval, else false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>test Interval is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=106">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_Equals_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.Equals*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_Equals_Hsm_BaseTypes_Intervals_IntervalBase__0__" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.Equals(Hsm.BaseTypes.Intervals.IntervalBase{`0})">Equals(IntervalBase&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(IntervalBase&lt;T&gt; other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Intervals.IntervalBase-1.html">IntervalBase</a>&lt;T&gt;</td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=157">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_Intersects_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.Intersects*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_Intersects_Hsm_BaseTypes_Intervals_IntervalBase__0__" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.Intersects(Hsm.BaseTypes.Intervals.IntervalBase{`0})">Intersects(IntervalBase&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Checks if the <code data-dev-comment-type="paramref" class="paramref">testInterval</code> intersects this interval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool Intersects(IntervalBase&lt;T&gt; testInterval)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Intervals.IntervalBase-1.html">IntervalBase</a>&lt;T&gt;</td>
+        <td><span class="parametername">testInterval</span></td>
+        <td><p>The interval that is tested if it intersects this interval.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the <code data-dev-comment-type="paramref" class="paramref">testInterval</code> intersects this interval, else false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>test Interval is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=141">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsContained_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsContained*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsContained_Hsm_BaseTypes_Intervals_IntervalBase__0__" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsContained(Hsm.BaseTypes.Intervals.IntervalBase{`0})">IsContained(IntervalBase&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Checks if this interval is contained within the <code data-dev-comment-type="paramref" class="paramref">testInterval</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsContained(IntervalBase&lt;T&gt; testInterval)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.Intervals.IntervalBase-1.html">IntervalBase</a>&lt;T&gt;</td>
+        <td><span class="parametername">testInterval</span></td>
+        <td><p>The interval that is tested if it is contained within this interval.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the <code data-dev-comment-type="paramref" class="paramref">testInterval</code> is contained within this interval, else false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p>test Interval is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=173">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsInfinity_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsInfinity*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsInfinity__0_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsInfinity(`0)">IsInfinity(T)</h4>
+  <div class="markdown level1 summary"><p>Checks if the given <code data-dev-comment-type="paramref" class="paramref">value</code> is an infinity value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool IsInfinity(T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be ckecked.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the value is considred as inifinty (exact definition depends on the implementing type), otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=82">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsInInterval_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsInInterval*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsInInterval__0_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsInInterval(`0)">IsInInterval(T)</h4>
+  <div class="markdown level1 summary"><p>Tests if the given <param name="valueToCheck"> is part of the interval.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInInterval(T valueToCheck)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">valueToCheck</span></td>
+        <td><p>The value that is tested for inclusion in the interval.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the <code data-dev-comment-type="paramref" class="paramref">valueToCheck</code> is within the interval, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=190">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsNegativeInfinity_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsNegativeInfinity*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsNegativeInfinity__0_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsNegativeInfinity(`0)">IsNegativeInfinity(T)</h4>
+  <div class="markdown level1 summary"><p>Checks if the given <code data-dev-comment-type="paramref" class="paramref">value</code> represents a negative infinity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool IsNegativeInfinity(T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be ckecked.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the value is considered as negative infinity (exact definition depends on the implementing type), otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=183">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsPositiveInfinity_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsPositiveInfinity*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_IsPositiveInfinity__0_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.IsPositiveInfinity(`0)">IsPositiveInfinity(T)</h4>
+  <div class="markdown level1 summary"><p>Checks if the given <code data-dev-comment-type="paramref" class="paramref">value</code> represents a positive infinity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool IsPositiveInfinity(T value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be ckecked.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the value is considered as positive infinity (exact definition depends on the implementing type), otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=122">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_ToString_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.ToString*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_ToString" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=128">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_Intervals_IntervalBase_1_ToString_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.ToString*"></a>
+  <h4 id="Hsm_BaseTypes_Intervals_IntervalBase_1_ToString_System_String_System_IFormatProvider_" data-uid="Hsm.BaseTypes.Intervals.IntervalBase`1.ToString(System.String,System.IFormatProvider)">ToString(String, IFormatProvider)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ToString(string format, IFormatProvider formatProvider)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.IFormatProvider</span></td>
+        <td><span class="parametername">formatProvider</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/Intervals/IntervalBase.cs&amp;version=GBFeature/HSMBT-3-implement_a_common_icontinuousinterval&amp;line=9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="https://docs.hagleitner.com/">Back to docs.hagleitner.com</a>
+            </span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

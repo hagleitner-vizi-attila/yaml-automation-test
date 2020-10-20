@@ -1,0 +1,1108 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SemanticVersion
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SemanticVersion
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Hsm.BaseTypes.SemanticVersion">
+  
+  
+  <h1 id="Hsm_BaseTypes_SemanticVersion" data-uid="Hsm.BaseTypes.SemanticVersion" class="text-break">Class SemanticVersion
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a semantic version number.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">SemanticVersion</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Hsm.BaseTypes.IVersion.html">IVersion</a></div>
+    <div><span class="xref">System.IComparable</span></div>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Hsm.BaseTypes.html">Hsm.BaseTypes</a></h6>
+  <h6><strong>Assembly</strong>: Hsm.BaseTypes.dll</h6>
+  <h5 id="Hsm_BaseTypes_SemanticVersion_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SemanticVersion : IVersion, IComparable, IEquatable&lt;SemanticVersion&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=22">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion__ctor_" data-uid="Hsm.BaseTypes.SemanticVersion.#ctor*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion__ctor_System_UInt32_System_UInt32_System_UInt32_" data-uid="Hsm.BaseTypes.SemanticVersion.#ctor(System.UInt32,System.UInt32,System.UInt32)">SemanticVersion(UInt32, UInt32, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a> class
+with major, minor and patch version numbers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemanticVersion(uint major, uint minor, uint patch)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>Major version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>Minor version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td><p>Patch version number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=62">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion__ctor_" data-uid="Hsm.BaseTypes.SemanticVersion.#ctor*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion__ctor_System_UInt32_System_UInt32_System_UInt32_Hsm_BaseTypes_BuildIdentifier_" data-uid="Hsm.BaseTypes.SemanticVersion.#ctor(System.UInt32,System.UInt32,System.UInt32,Hsm.BaseTypes.BuildIdentifier)">SemanticVersion(UInt32, UInt32, UInt32, BuildIdentifier)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a> class
+with major, minor and patch version numbers
+and a <a class="xref" href="Hsm.BaseTypes.BuildIdentifier.html#Hsm_BaseTypes_BuildIdentifier__ctor_Hsm_BaseTypes_BuildIdentifierPart_">BuildIdentifier(BuildIdentifierPart)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemanticVersion(uint major, uint minor, uint patch, BuildIdentifier buildIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>Major version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>Minor version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td><p>Patch version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.BuildIdentifier.html">BuildIdentifier</a></td>
+        <td><span class="parametername">buildIdentifier</span></td>
+        <td><p>Build identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">buildIdentifier</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=42">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion__ctor_" data-uid="Hsm.BaseTypes.SemanticVersion.#ctor*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion__ctor_System_UInt32_System_UInt32_System_UInt32_Hsm_BaseTypes_PreReleaseIdentifier_" data-uid="Hsm.BaseTypes.SemanticVersion.#ctor(System.UInt32,System.UInt32,System.UInt32,Hsm.BaseTypes.PreReleaseIdentifier)">SemanticVersion(UInt32, UInt32, UInt32, PreReleaseIdentifier)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a> class
+with major, minor and patch version numbers
+and a <a class="xref" href="Hsm.BaseTypes.PreReleaseIdentifier.html#Hsm_BaseTypes_PreReleaseIdentifier__ctor_Hsm_BaseTypes_PreReleaseIdentifierPart_">PreReleaseIdentifier(PreReleaseIdentifierPart)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemanticVersion(uint major, uint minor, uint patch, PreReleaseIdentifier preReleaseIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>Major version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>Minor version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td><p>Patch version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.PreReleaseIdentifier.html">PreReleaseIdentifier</a></td>
+        <td><span class="parametername">preReleaseIdentifier</span></td>
+        <td><p>Pre-release identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">preReleaseIdentifier</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=85">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion__ctor_" data-uid="Hsm.BaseTypes.SemanticVersion.#ctor*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion__ctor_System_UInt32_System_UInt32_System_UInt32_Hsm_BaseTypes_PreReleaseIdentifier_Hsm_BaseTypes_BuildIdentifier_" data-uid="Hsm.BaseTypes.SemanticVersion.#ctor(System.UInt32,System.UInt32,System.UInt32,Hsm.BaseTypes.PreReleaseIdentifier,Hsm.BaseTypes.BuildIdentifier)">SemanticVersion(UInt32, UInt32, UInt32, PreReleaseIdentifier, BuildIdentifier)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a> class.
+with major, minor and patch version numbers,
+a <a class="xref" href="Hsm.BaseTypes.PreReleaseIdentifier.html#Hsm_BaseTypes_PreReleaseIdentifier__ctor_Hsm_BaseTypes_PreReleaseIdentifierPart_">PreReleaseIdentifier(PreReleaseIdentifierPart)</a>
+and a <a class="xref" href="Hsm.BaseTypes.BuildIdentifier.html#Hsm_BaseTypes_BuildIdentifier__ctor_Hsm_BaseTypes_BuildIdentifierPart_">BuildIdentifier(BuildIdentifierPart)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SemanticVersion(uint major, uint minor, uint patch, PreReleaseIdentifier preReleaseIdentifier, BuildIdentifier buildIdentifier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">major</span></td>
+        <td><p>Major version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">minor</span></td>
+        <td><p>Minor version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">patch</span></td>
+        <td><p>Patch version number.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.PreReleaseIdentifier.html">PreReleaseIdentifier</a></td>
+        <td><span class="parametername">preReleaseIdentifier</span></td>
+        <td><p>Pre-release identifier.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.BuildIdentifier.html">BuildIdentifier</a></td>
+        <td><span class="parametername">buildIdentifier</span></td>
+        <td><p>Build identifier.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">preReleaseIdentifier</code> is null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentNullException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">buildIdentifier</code> is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=118">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_BuildIdentifier_" data-uid="Hsm.BaseTypes.SemanticVersion.BuildIdentifier*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_BuildIdentifier" data-uid="Hsm.BaseTypes.SemanticVersion.BuildIdentifier">BuildIdentifier</h4>
+  <div class="markdown level1 summary"><p>Gets the build identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BuildIdentifier BuildIdentifier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.BuildIdentifier.html">BuildIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=98">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_Major_" data-uid="Hsm.BaseTypes.SemanticVersion.Major*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_Major" data-uid="Hsm.BaseTypes.SemanticVersion.Major">Major</h4>
+  <div class="markdown level1 summary"><p>Gets the major version number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Major { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=103">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_Minor_" data-uid="Hsm.BaseTypes.SemanticVersion.Minor*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_Minor" data-uid="Hsm.BaseTypes.SemanticVersion.Minor">Minor</h4>
+  <div class="markdown level1 summary"><p>Gets the minor version number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Minor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=108">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_Patch_" data-uid="Hsm.BaseTypes.SemanticVersion.Patch*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_Patch" data-uid="Hsm.BaseTypes.SemanticVersion.Patch">Patch</h4>
+  <div class="markdown level1 summary"><p>Gets the patch version number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Patch { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=113">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_PreReleaseIdentifier_" data-uid="Hsm.BaseTypes.SemanticVersion.PreReleaseIdentifier*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_PreReleaseIdentifier" data-uid="Hsm.BaseTypes.SemanticVersion.PreReleaseIdentifier">PreReleaseIdentifier</h4>
+  <div class="markdown level1 summary"><p>Gets the pre-release identifier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PreReleaseIdentifier PreReleaseIdentifier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.PreReleaseIdentifier.html">PreReleaseIdentifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=289">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_CompareTo_" data-uid="Hsm.BaseTypes.SemanticVersion.CompareTo*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_CompareTo_System_Object_" data-uid="Hsm.BaseTypes.SemanticVersion.CompareTo(System.Object)">CompareTo(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=277">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_Equals_" data-uid="Hsm.BaseTypes.SemanticVersion.Equals*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_Equals_Hsm_BaseTypes_SemanticVersion_" data-uid="Hsm.BaseTypes.SemanticVersion.Equals(Hsm.BaseTypes.SemanticVersion)">Equals(SemanticVersion)</h4>
+  <div class="markdown level1 summary"><p>Checks if this <a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a> is equal to another <a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(SemanticVersion other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The <a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a> to compare with the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the specified <a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a> is equal to the current object; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=283">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_Equals_" data-uid="Hsm.BaseTypes.SemanticVersion.Equals*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_Equals_System_Object_" data-uid="Hsm.BaseTypes.SemanticVersion.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=319">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_GetHashCode_" data-uid="Hsm.BaseTypes.SemanticVersion.GetHashCode*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_GetHashCode" data-uid="Hsm.BaseTypes.SemanticVersion.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=325">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_ToString_" data-uid="Hsm.BaseTypes.SemanticVersion.ToString*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_ToString" data-uid="Hsm.BaseTypes.SemanticVersion.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=209">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_TryParse_" data-uid="Hsm.BaseTypes.SemanticVersion.TryParse*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_TryParse_System_String_Hsm_BaseTypes_SemanticVersion__" data-uid="Hsm.BaseTypes.SemanticVersion.TryParse(System.String,Hsm.BaseTypes.SemanticVersion@)">TryParse(String, out SemanticVersion)</h4>
+  <div class="markdown level1 summary"><p>Converts the string representation of an <a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a> to its <a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a> equivalent. A return value indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParse(string semanticVersionString, out SemanticVersion semanticVersion)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">semanticVersionString</span></td>
+        <td><p>A string representing a semantic version which shall be converted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a></td>
+        <td><span class="parametername">semanticVersion</span></td>
+        <td><p>When this method returns, contains the <a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a> equivalent of the semantic version contained in <code data-dev-comment-type="paramref" class="paramref">semanticVersionString</code>,
+if the conversion succeeded, or null if the conversion failed.
+The conversion fails if the <code data-dev-comment-type="paramref" class="paramref">semanticVersionString</code> parameter is null or Empty,
+or is not of the correct format. This parameter is passed uninitialized; any value originally supplied in <code data-dev-comment-type="paramref" class="paramref">semanticVersion</code> will be overwritten.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if <code data-dev-comment-type="paramref" class="paramref">semanticVersionString</code> was converted successfully; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=120">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_op_Equality_" data-uid="Hsm.BaseTypes.SemanticVersion.op_Equality*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_op_Equality_Hsm_BaseTypes_SemanticVersion_Hsm_BaseTypes_SemanticVersion_" data-uid="Hsm.BaseTypes.SemanticVersion.op_Equality(Hsm.BaseTypes.SemanticVersion,Hsm.BaseTypes.SemanticVersion)">Equality(SemanticVersion, SemanticVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(SemanticVersion semanticVersion1, SemanticVersion semanticVersion2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a></td>
+        <td><span class="parametername">semanticVersion1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a></td>
+        <td><span class="parametername">semanticVersion2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=150">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_op_GreaterThan_" data-uid="Hsm.BaseTypes.SemanticVersion.op_GreaterThan*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_op_GreaterThan_Hsm_BaseTypes_SemanticVersion_Hsm_BaseTypes_SemanticVersion_" data-uid="Hsm.BaseTypes.SemanticVersion.op_GreaterThan(Hsm.BaseTypes.SemanticVersion,Hsm.BaseTypes.SemanticVersion)">GreaterThan(SemanticVersion, SemanticVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator&gt;(SemanticVersion semanticVersion1, SemanticVersion semanticVersion2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a></td>
+        <td><span class="parametername">semanticVersion1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a></td>
+        <td><span class="parametername">semanticVersion2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=140">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_op_GreaterThanOrEqual_" data-uid="Hsm.BaseTypes.SemanticVersion.op_GreaterThanOrEqual*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_op_GreaterThanOrEqual_Hsm_BaseTypes_SemanticVersion_Hsm_BaseTypes_SemanticVersion_" data-uid="Hsm.BaseTypes.SemanticVersion.op_GreaterThanOrEqual(Hsm.BaseTypes.SemanticVersion,Hsm.BaseTypes.SemanticVersion)">GreaterThanOrEqual(SemanticVersion, SemanticVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(SemanticVersion semanticVersion1, SemanticVersion semanticVersion2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a></td>
+        <td><span class="parametername">semanticVersion1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a></td>
+        <td><span class="parametername">semanticVersion2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=135">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_op_Inequality_" data-uid="Hsm.BaseTypes.SemanticVersion.op_Inequality*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_op_Inequality_Hsm_BaseTypes_SemanticVersion_Hsm_BaseTypes_SemanticVersion_" data-uid="Hsm.BaseTypes.SemanticVersion.op_Inequality(Hsm.BaseTypes.SemanticVersion,Hsm.BaseTypes.SemanticVersion)">Inequality(SemanticVersion, SemanticVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(SemanticVersion semanticVersion1, SemanticVersion semanticVersion2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a></td>
+        <td><span class="parametername">semanticVersion1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a></td>
+        <td><span class="parametername">semanticVersion2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=195">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_op_LessThan_" data-uid="Hsm.BaseTypes.SemanticVersion.op_LessThan*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_op_LessThan_Hsm_BaseTypes_SemanticVersion_Hsm_BaseTypes_SemanticVersion_" data-uid="Hsm.BaseTypes.SemanticVersion.op_LessThan(Hsm.BaseTypes.SemanticVersion,Hsm.BaseTypes.SemanticVersion)">LessThan(SemanticVersion, SemanticVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(SemanticVersion semanticVersion1, SemanticVersion semanticVersion2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a></td>
+        <td><span class="parametername">semanticVersion1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a></td>
+        <td><span class="parametername">semanticVersion2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=145">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_SemanticVersion_op_LessThanOrEqual_" data-uid="Hsm.BaseTypes.SemanticVersion.op_LessThanOrEqual*"></a>
+  <h4 id="Hsm_BaseTypes_SemanticVersion_op_LessThanOrEqual_Hsm_BaseTypes_SemanticVersion_Hsm_BaseTypes_SemanticVersion_" data-uid="Hsm.BaseTypes.SemanticVersion.op_LessThanOrEqual(Hsm.BaseTypes.SemanticVersion,Hsm.BaseTypes.SemanticVersion)">LessThanOrEqual(SemanticVersion, SemanticVersion)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(SemanticVersion semanticVersion1, SemanticVersion semanticVersion2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a></td>
+        <td><span class="parametername">semanticVersion1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.SemanticVersion.html">SemanticVersion</a></td>
+        <td><span class="parametername">semanticVersion2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Hsm.BaseTypes.IVersion.html">IVersion</a>
+  </div>
+  <div>
+      <span class="xref">System.IComparable</span>
+  </div>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/VersionDefinition/SemanticVersion.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="https://docs.hagleitner.com/">Back to docs.hagleitner.com</a>
+            </span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

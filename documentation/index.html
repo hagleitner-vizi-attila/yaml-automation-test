@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Hsm.BaseTypes </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Hsm.BaseTypes ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="hsmbasetypes">Hsm.BaseTypes</h1>
+
+<p>The <em>Hsm.BaseTypes</em> package contains a collection of types. These types find use in various different projects.</p>
+<h3 id="eui64definition">Eui64Definition</h3>
+<p>This type represents a standardized address format (EUI-64).</p>
+<h3 id="articlenumberdefinitions">ArticleNumberDefinitions</h3>
+<h4 id="salesproductarticlenumber">SalesProductArticleNumber</h4>
+<p>This type represents a sales product article number.</p>
+<h3 id="versiondefinitions">VersionDefinitions</h3>
+<h4 id="integerversion">IntegerVersion</h4>
+<p>This type represents an integer version number.</p>
+<h4 id="semanticversion">SemanticVersion</h4>
+<p>This type represents a <a href="https://semver.org/">semantic version number</a>.</p>
+<h5 id="parts-of-a-semantic-version-number">Parts of a semantic version number</h5>
+<ul>
+<li>Major version number</li>
+<li>Minor version number</li>
+<li>Patch version number</li>
+<li>Pre-release identifier</li>
+<li>Build identifier</li>
+</ul>
+<h5 id="examples">Examples</h5>
+<ul>
+<li>1.0.1</li>
+<li>1.0.1-alpha</li>
+<li>1.0.1-alpha+001</li>
+</ul>
+<h3 id="serialnumberdefinitions">SerialNumberDefinitions</h3>
+<h4 id="serialnumberv1">SerialNumberV1</h4>
+<p>This type represents a version 1 Hagleitner serial number.</p>
+<h5 id="format">Format</h5>
+<p>YYMMDDEE-SSS+</p>
+<ul>
+<li>YY - year</li>
+<li>MM - month</li>
+<li>DD - day</li>
+<li>EE - employee number (FixedLengthNumber)</li>
+<li>S+ - at least 1 digit of continuous sequential number (FixedLengthNumber)</li>
+</ul>
+<h4 id="serialnumberv2">SerialNumberV2</h4>
+<p>This type represents a version 2 Hagleitner serial number.</p>
+<h5 id="format-1">Format</h5>
+<p>TTTT-YYMMDD-SSSSS</p>
+<ul>
+<li>TTTT - type, production line, machine id, or test device (FixedLengthNumber)</li>
+<li>YY - year</li>
+<li>MM - month</li>
+<li>DD - day</li>
+<li>SSSSS - continuous sequential number (FixedLengthNumber)</li>
+</ul>
+<h4 id="serialnumberv3">SerialNumberV3</h4>
+<p>This type represents a version 3 Hagleitner serial number.</p>
+<h5 id="format-2">Format</h5>
+<p>YYMMDDLLLSSSS</p>
+<ul>
+<li>YY - year</li>
+<li>MM - month</li>
+<li>DD - day</li>
+<li>LLL - production line, machine id, or test device (Base36 encoding)</li>
+<li>SSSS - continuous sequential number (Base36 encoding)</li>
+</ul>
+<h3 id="numberdefinitions">NumberDefinitions</h3>
+<h4 id="fixedlengthnumber">FixedLengthNumber</h4>
+<p>This type represents a fixed length number.
+For example 42 with length of 3 would result in 042.</p>
+<h4 id="base36cipher">Base36Cipher</h4>
+<p>This type represents a number with a base defined by 0-9 and letters a-z (based on ASCII characters).</p>
+<h3 id="intervals">Intervals</h3>
+<h4 id="doubleinterval">DoubleInterval</h4>
+<p>This type represents a <code>double</code> interval. The interval can be left- and / or right-open.</p>
+<h4 id="datetimeoffsetinterval">DateTimeOffsetInterval</h4>
+<p>This type represents a date interval (with <code>DateTimeOffset</code>). The interval can be left- and / or right-open.</p>
+<h4 id="absolutedateinterval">AbsoluteDateInterval</h4>
+<p>This type represents an absolut date interval with a start date as <code>DateTimeOffset</code> and an end date as <code>DateTimeOffset</code>.</p>
+<h4 id="relativedateinterval">RelativeDateInterval</h4>
+<p>This type represents a relative date interval. Start and end date are calculated by offsetting the current date with provided offset classes.</p>
+<h3 id="validatable">Validatable</h3>
+<p>Implements validation using the <a href="https://martinfowler.com/articles/replaceThrowWithNotification.html">notification pattern</a>.</p>
+<h4 id="validationresult">ValidationResult</h4>
+<p>This type represents the result of a validation run produced by objects implementing the Validatable interface.</p>
+<h4 id="validationmessage">ValidationMessage</h4>
+<p>This type represents a message which contains validation information.</p>
+<h4 id="severity">Severity</h4>
+<p>Defines the level of severity that a ValidationMessage could have.</p>
+<h4 id="validationexception">ValidationException</h4>
+<p>This <code>exception</code> can be thrown if a ValidationResult contains at least one error level ValidationMessage.</p>
+<h4 id="validationresultformatter">ValidationResultFormatter</h4>
+<p>Represents a class to format a ValidationResult.</p>
+<h4 id="validationresulttranslator">ValidationResultTranslator</h4>
+<p>Represents a translator, which translates ValidationMessage of a ValidationResult.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/Documentation/index.md&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="https://docs.hagleitner.com/">Back to docs.hagleitner.com</a>
+            </span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

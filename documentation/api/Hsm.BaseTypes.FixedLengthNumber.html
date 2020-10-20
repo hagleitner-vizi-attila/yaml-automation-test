@@ -1,0 +1,1300 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct FixedLengthNumber
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct FixedLengthNumber
+   ">
+    <meta name="generator" content="docfx 2.52.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Hsm.BaseTypes.FixedLengthNumber">
+  
+  
+  <h1 id="Hsm_BaseTypes_FixedLengthNumber" data-uid="Hsm.BaseTypes.FixedLengthNumber" class="text-break">Struct FixedLengthNumber
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a fixed length number.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">System.IEquatable</span>&lt;<a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>&gt;</div>
+    <div><span class="xref">System.IComparable</span>&lt;<a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Hsm.BaseTypes.html">Hsm.BaseTypes</a></h6>
+  <h6><strong>Assembly</strong>: Hsm.BaseTypes.dll</h6>
+  <h5 id="Hsm_BaseTypes_FixedLengthNumber_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct FixedLengthNumber : IEquatable&lt;FixedLengthNumber&gt;, IComparable&lt;FixedLengthNumber&gt;</code></pre>
+  </div>
+  <h5 id="Hsm_BaseTypes_FixedLengthNumber_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>For example 42 with length of 3 would result in 042.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=19">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber__ctor_" data-uid="Hsm.BaseTypes.FixedLengthNumber.#ctor*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber__ctor_System_UInt64_System_UInt32_" data-uid="Hsm.BaseTypes.FixedLengthNumber.#ctor(System.UInt64,System.UInt32)">FixedLengthNumber(UInt64, UInt32)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a> struct.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FixedLengthNumber(ulong value, uint length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>The length of the <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">value</code> is greater then 10 to the power of the length.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">length</code> is 0.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=39">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_DefaultValue_" data-uid="Hsm.BaseTypes.FixedLengthNumber.DefaultValue*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_DefaultValue" data-uid="Hsm.BaseTypes.FixedLengthNumber.DefaultValue">DefaultValue</h4>
+  <div class="markdown level1 summary"><p>Gets the default value of a <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.
+This is represented as value: 0 with length: 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FixedLengthNumber DefaultValue { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=49">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_Length_" data-uid="Hsm.BaseTypes.FixedLengthNumber.Length*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_Length" data-uid="Hsm.BaseTypes.FixedLengthNumber.Length">Length</h4>
+  <div class="markdown level1 summary"><p>Gets the length of the <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public uint Length { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=44">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_Value_" data-uid="Hsm.BaseTypes.FixedLengthNumber.Value*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_Value" data-uid="Hsm.BaseTypes.FixedLengthNumber.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Gets the value of the <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ulong Value { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=199">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_CompareTo_" data-uid="Hsm.BaseTypes.FixedLengthNumber.CompareTo*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_CompareTo_Hsm_BaseTypes_FixedLengthNumber_" data-uid="Hsm.BaseTypes.FixedLengthNumber.CompareTo(Hsm.BaseTypes.FixedLengthNumber)">CompareTo(FixedLengthNumber)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CompareTo(FixedLengthNumber other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=182">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_Equals_" data-uid="Hsm.BaseTypes.FixedLengthNumber.Equals*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_Equals_Hsm_BaseTypes_FixedLengthNumber_" data-uid="Hsm.BaseTypes.FixedLengthNumber.Equals(Hsm.BaseTypes.FixedLengthNumber)">Equals(FixedLengthNumber)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(FixedLengthNumber other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=193">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_Equals_" data-uid="Hsm.BaseTypes.FixedLengthNumber.Equals*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_Equals_System_Object_" data-uid="Hsm.BaseTypes.FixedLengthNumber.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(System.Object)</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=169">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_FromString_" data-uid="Hsm.BaseTypes.FixedLengthNumber.FromString*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_FromString_System_String_" data-uid="Hsm.BaseTypes.FixedLengthNumber.FromString(System.String)">FromString(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a> from a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FixedLengthNumber FromString(string fixedLengthNumberString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fixedLengthNumberString</span></td>
+        <td><p>A string to be constructed as <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><p><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a> created from <code data-dev-comment-type="paramref" class="paramref">fixedLengthNumberString</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">fixedLengthNumberString</code> is null or empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=215">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_GetHashCode_" data-uid="Hsm.BaseTypes.FixedLengthNumber.GetHashCode*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_GetHashCode" data-uid="Hsm.BaseTypes.FixedLengthNumber.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=96">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_ToFixedLengthNumber_" data-uid="Hsm.BaseTypes.FixedLengthNumber.ToFixedLengthNumber*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_ToFixedLengthNumber_System_Int32_" data-uid="Hsm.BaseTypes.FixedLengthNumber.ToFixedLengthNumber(System.Int32)">ToFixedLengthNumber(Int32)</h4>
+  <div class="markdown level1 summary"><p>Alternate method to cast a int value to <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FixedLengthNumber ToFixedLengthNumber(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The int value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><p><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">value</code> is a negative number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=117">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_ToFixedLengthNumber_" data-uid="Hsm.BaseTypes.FixedLengthNumber.ToFixedLengthNumber*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_ToFixedLengthNumber_System_Int64_" data-uid="Hsm.BaseTypes.FixedLengthNumber.ToFixedLengthNumber(System.Int64)">ToFixedLengthNumber(Int64)</h4>
+  <div class="markdown level1 summary"><p>Alternate method to cast a long value to <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FixedLengthNumber ToFixedLengthNumber(long value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The long value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><p><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ArgumentException</span></td>
+        <td><p><code data-dev-comment-type="paramref" class="paramref">value</code> is a negative number.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=106">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_ToFixedLengthNumber_" data-uid="Hsm.BaseTypes.FixedLengthNumber.ToFixedLengthNumber*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_ToFixedLengthNumber_System_UInt32_" data-uid="Hsm.BaseTypes.FixedLengthNumber.ToFixedLengthNumber(System.UInt32)">ToFixedLengthNumber(UInt32)</h4>
+  <div class="markdown level1 summary"><p>Alternate method to cast a uint value to <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FixedLengthNumber ToFixedLengthNumber(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The uint value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><p><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=127">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_ToFixedLengthNumber_" data-uid="Hsm.BaseTypes.FixedLengthNumber.ToFixedLengthNumber*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_ToFixedLengthNumber_System_UInt64_" data-uid="Hsm.BaseTypes.FixedLengthNumber.ToFixedLengthNumber(System.UInt64)">ToFixedLengthNumber(UInt64)</h4>
+  <div class="markdown level1 summary"><p>Alternate method to cast a ulong value to <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FixedLengthNumber ToFixedLengthNumber(ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The ulong value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><p><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=221">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_ToString_" data-uid="Hsm.BaseTypes.FixedLengthNumber.ToString*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_ToString" data-uid="Hsm.BaseTypes.FixedLengthNumber.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.ToString()</span></div>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=140">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_TryParse_" data-uid="Hsm.BaseTypes.FixedLengthNumber.TryParse*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_TryParse_System_String_Hsm_BaseTypes_FixedLengthNumber__" data-uid="Hsm.BaseTypes.FixedLengthNumber.TryParse(System.String,Hsm.BaseTypes.FixedLengthNumber@)">TryParse(String, out FixedLengthNumber)</h4>
+  <div class="markdown level1 summary"><p>Converts the string representation of a <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a> to its <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a> equivalent. A return value indicates whether the operation succeeded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryParse(string fixedLengthNumberString, out FixedLengthNumber fixedLengthNumber)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fixedLengthNumberString</span></td>
+        <td><p>The string to parse.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">fixedLengthNumber</span></td>
+        <td><p>When the method returns, contains the <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a> equivalent to the input string, if the conversion succeeded,
+or null, if the conversion failed. The conversion fails if the input parameter is null or does not contain a valid string representation of a <a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a>.
+This parameter is passed uninitialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if parsing was successful, otherwise false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=60">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_op_Equality_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_Equality*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_op_Equality_Hsm_BaseTypes_FixedLengthNumber_Hsm_BaseTypes_FixedLengthNumber_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_Equality(Hsm.BaseTypes.FixedLengthNumber,Hsm.BaseTypes.FixedLengthNumber)">Equality(FixedLengthNumber, FixedLengthNumber)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(FixedLengthNumber numberDigitPart1, FixedLengthNumber numberDigitPart2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">numberDigitPart1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">numberDigitPart2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=51">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_op_Explicit_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_Explicit*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_op_Explicit_System_Int32__Hsm_BaseTypes_FixedLengthNumber" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_Explicit(System.Int32)~Hsm.BaseTypes.FixedLengthNumber">Explicit(Int32 to FixedLengthNumber)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator FixedLengthNumber(int value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=55">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_op_Explicit_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_Explicit*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_op_Explicit_System_Int64__Hsm_BaseTypes_FixedLengthNumber" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_Explicit(System.Int64)~Hsm.BaseTypes.FixedLengthNumber">Explicit(Int64 to FixedLengthNumber)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator FixedLengthNumber(long value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=53">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_op_Explicit_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_Explicit*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_op_Explicit_System_UInt32__Hsm_BaseTypes_FixedLengthNumber" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_Explicit(System.UInt32)~Hsm.BaseTypes.FixedLengthNumber">Explicit(UInt32 to FixedLengthNumber)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator FixedLengthNumber(uint value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt32</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=57">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_op_Explicit_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_Explicit*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_op_Explicit_System_UInt64__Hsm_BaseTypes_FixedLengthNumber" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_Explicit(System.UInt64)~Hsm.BaseTypes.FixedLengthNumber">Explicit(UInt64 to FixedLengthNumber)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static explicit operator FixedLengthNumber(ulong value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.UInt64</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=80">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_op_GreaterThan_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_GreaterThan*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_op_GreaterThan_Hsm_BaseTypes_FixedLengthNumber_Hsm_BaseTypes_FixedLengthNumber_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_GreaterThan(Hsm.BaseTypes.FixedLengthNumber,Hsm.BaseTypes.FixedLengthNumber)">GreaterThan(FixedLengthNumber, FixedLengthNumber)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator&gt;(FixedLengthNumber numberDigitPart1, FixedLengthNumber numberDigitPart2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">numberDigitPart1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">numberDigitPart2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=70">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_op_GreaterThanOrEqual_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_GreaterThanOrEqual*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_op_GreaterThanOrEqual_Hsm_BaseTypes_FixedLengthNumber_Hsm_BaseTypes_FixedLengthNumber_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_GreaterThanOrEqual(Hsm.BaseTypes.FixedLengthNumber,Hsm.BaseTypes.FixedLengthNumber)">GreaterThanOrEqual(FixedLengthNumber, FixedLengthNumber)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &gt;=(FixedLengthNumber numberDigitPart1, FixedLengthNumber numberDigitPart2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">numberDigitPart1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">numberDigitPart2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=65">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_op_Inequality_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_Inequality*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_op_Inequality_Hsm_BaseTypes_FixedLengthNumber_Hsm_BaseTypes_FixedLengthNumber_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_Inequality(Hsm.BaseTypes.FixedLengthNumber,Hsm.BaseTypes.FixedLengthNumber)">Inequality(FixedLengthNumber, FixedLengthNumber)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(FixedLengthNumber numberDigitPart1, FixedLengthNumber numberDigitPart2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">numberDigitPart1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">numberDigitPart2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=85">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_op_LessThan_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_LessThan*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_op_LessThan_Hsm_BaseTypes_FixedLengthNumber_Hsm_BaseTypes_FixedLengthNumber_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_LessThan(Hsm.BaseTypes.FixedLengthNumber,Hsm.BaseTypes.FixedLengthNumber)">LessThan(FixedLengthNumber, FixedLengthNumber)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;(FixedLengthNumber numberDigitPart1, FixedLengthNumber numberDigitPart2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">numberDigitPart1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">numberDigitPart2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <span class="small pull-right mobile-hide">
+    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=75">View Source</a>
+  </span>
+  <a id="Hsm_BaseTypes_FixedLengthNumber_op_LessThanOrEqual_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_LessThanOrEqual*"></a>
+  <h4 id="Hsm_BaseTypes_FixedLengthNumber_op_LessThanOrEqual_Hsm_BaseTypes_FixedLengthNumber_Hsm_BaseTypes_FixedLengthNumber_" data-uid="Hsm.BaseTypes.FixedLengthNumber.op_LessThanOrEqual(Hsm.BaseTypes.FixedLengthNumber,Hsm.BaseTypes.FixedLengthNumber)">LessThanOrEqual(FixedLengthNumber, FixedLengthNumber)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator &lt;=(FixedLengthNumber numberDigitPart1, FixedLengthNumber numberDigitPart2)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">numberDigitPart1</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Hsm.BaseTypes.FixedLengthNumber.html">FixedLengthNumber</a></td>
+        <td><span class="parametername">numberDigitPart2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;T&gt;</span>
+  </div>
+  <div>
+      <span class="xref">System.IComparable&lt;T&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://dev.azure.com/hagleitner-dev/HsM%20BaseTypes/_git/HsM%20BaseTypes?path=DotNet/HsmBaseTypes/NumberDefinition/FixedLengthNumber.cs&amp;version=GBfeature/HSMBT-5_articlenumber&amp;line=10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="https://docs.hagleitner.com/">Back to docs.hagleitner.com</a>
+            </span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
